@@ -1,0 +1,213 @@
+1-What are the different data types present in JavaScript?
+
+Primitive types: String, Number, BigInt, Boolean, Symbol, Undefined, and Null.
+Non-primitive type: Object (including Arrays and Functions).
+
+2-Explain Hoisting in JavaScript.
+Hoisting moves variable and function declarations to the top of their scope during the compile phase.
+Variables declared with var are hoisted without initialization, whereas let and const are hoisted but remain in the Temporal Dead Zone.
+
+3-Why do we use the word “debugger” in JavaScript?
+It pauses code execution, allowing inspection of variables and call stacks.
+
+4-Difference between == and === operators.
+comparision operators
+== checks equality with only values.
+=== checks strict equality with values and datatype
+
+5-Difference between var and let keyword in JavaScript.
+var has function scope, while let has block scope.
+var declarations are hoisted and can be redeclared, whereas let cannot be redeclared in the same scope.
+
+6-Explain Implicit Type Coercion in JavaScript.
+Implicit type coercion converts one data type to another automatically during operations.
+Examples include string concatenation ('5' + 2 → '52') and arithmetic operations ('5' - 2 → 3).
+
+7-Is JavaScript a statically typed or dynamically typed language?
+JavaScript is dynamically typed, the type of variables is checked during run time
+
+8-What is NaN property in JavaScript?
+NaN stands for "Not-a-Number" and 
+represents an invalid number result.
+It is of type Number and 
+is not equal to itself (NaN !== NaN).
+
+9-Explain passed by value and passed by reference.
+Primitive types are passed by value, meaning a copy of the value is passed.
+Objects are passed by reference, so modifications affect the original object.
+
+10-What is an Immediately Invoked Function in JavaScript?
+An Immediately Invoked Function Expression (IIFE) executes immediately after definition.
+It is written as (function() { ... })() to create a private scope.
+
+11-What do you mean by strict mode in JavaScript and characteristics of JavaScript strict-mode?
+the "use strict"keyword is used to define strict mode in  JavaScript
+in strict mode , it doesnt allow to use js keywords as parameters or function name, or duplicate arguments
+
+12-Explain Higher Order Functions in JavaScript.
+Higher-order functions accept other functions as arguments or return them as results.
+Examples include map(), filter(), and reduce().
+
+13-Explain “this” keyword.
+The this keyword refers to the object that is executing the current function.
+
+14-What do you mean by Self-Invoking Functions?
+Self-invoking functions are functions that execute immediately after they are defined.
+They are written as (function() { ... })() and are often used for creating private scopes.
+
+15-Explain call(), apply(), and bind() methods.
+Method	When it Executes	Arguments Passed
+call()	Executes Immediately	Passed One by One
+apply()	Executes Immediately	Passed as an Array
+bind()	Does NOT Execute Immediately	Passed One by One
+
+
+16-What is currying in JavaScript?
+Currying transforms a function with multiple arguments into a sequence of functions, each taking a single argument.
+It allows partial application of arguments for reusability.
+
+17-What are some advantages of using External JavaScript?
+it improves code reusability and 
+maintainability by separating logic from HTML.
+It  reduces loading time.
+
+18-Explain Scope and Scope Chain in JavaScript.
+Scope determines the visibility of variables and functions in a program.
+The scope chain is the hierarchy of scopes used to resolve variable access.
+
+19-Explain Closures in JavaScript.
+its the avilability of a function to remember the variable and function which are declared in its outer scope.
+
+
+20-Mention some advantages of JavaScript.
+Runs on the client-side, reducing server load.
+Supports event-driven and asynchronous programming.
+
+21-What are object prototypes?
+Object prototypes allow objects to inherit properties and methods from other objects.
+They are part of the prototype chain used in JavaScript inheritance.
+
+22-What are callbacks?
+Functions passed as arguments to other functions.
+Used for handling asynchronous tasks or events.
+
+23-What are the types of errors in JavaScript?
+SyntaxError, ReferenceError, TypeError, RangeError, and EvalError.
+These errors represent issues in code execution and structure.
+
+24-What is memoization?
+Memoization is a technique used to improve performance by storing the results
+whenver the funct is called 1st time it value is stored in cache
+and when the same input is given, it fetches the result from the cache instead of recomputing it.
+
+
+25-What is recursion in a programming language?
+A function calling itself to solve smaller sub-problems.
+Requires a base case to terminate the recursion.
+
+26-What is the use of a constructor function in JavaScript?
+Used to create and initialize objects with properties and methods.
+Acts as a template for creating multiple similar objects.
+What is DOM?
+
+27-DOM (Document Object Model) represents the structure of an HTML document as a tree.
+Allows JavaScript to interact with and modify HTML elements dynamically.
+
+28-Which method is used to retrieve a character from a certain index?
+charAt(index) retrieves the character at the specified index.
+Alternatively, array-style indexing (e.g., string[index]) can be used.
+
+29-What do you mean by BOM?
+BOM (Browser Object Model) provides a way to interact with the browser window.
+Includes objects like window, navigator, screen, and history.
+
+30-What is the distinction between client-side and server-side JavaScript?
+Client-side JavaScript runs in the browser for UI interaction and validation.
+Server-side JavaScript runs on a server (e.g., Node.js) for backend tasks.
+
+31-What are arrow functions?
+Arrow functions are a concise syntax for defining functions using =>.
+They do not have their own this context and are lexically scoped.
+
+32-What do you mean by prototype design pattern?
+A creational design pattern that creates new objects using existing objects as templates.
+Useful for cloning objects efficiently.
+
+33-Differences between declaring variables using var, let, and const.
+var has function scope, let and const have block scope.
+const creates immutable bindings, while let allows reassignment.
+
+34-What is the rest parameter and spread operator?
+The rest parameter (...args) gathers multiple arguments into an array.
+The spread operator (...) expands elements of an array or object.
+
+35-In JavaScript, how many different methods can you make on an object?
+Methods can be added using object literals, prototypes, or class definitions.
+There is no fixed limit to the number of methods on an object.
+
+36-What is the use of promises in JavaScript?
+Promises handle asynchronous operations by representing a value that may be available in the future.
+They have states: pending, fulfilled, and rejected, allowing better error handling.
+
+37-What are classes in JavaScript?
+
+Classes are syntactic sugar over prototypes, providing a cleaner way to define objects and inheritance.
+They include methods like constructor() and support inheritance through extends.
+
+
+What are generator functions?
+
+Generator functions are special functions that can pause and resume their execution using the yield keyword.
+They return an iterator object on execution.
+Explain WeakSet in JavaScript.
+
+WeakSet is a collection of objects where the references are weak, meaning the objects can be garbage-collected if there are no other references to them.
+It only allows unique object entries and does not have methods to iterate over its elements.
+Why do we use callbacks?
+
+Callbacks are used to handle asynchronous operations by passing a function as an argument.
+They allow executing code after a task completes, avoiding blocking the main thread.
+Explain WeakMap in JavaScript.
+
+WeakMap is a collection of key-value pairs where keys must be objects, and the references to the keys are weak.
+WeakMap entries are not enumerable and are used for memory-efficient caching.
+What is Object Destructuring?
+
+Object destructuring is a syntax to unpack properties of an object into distinct variables.
+It simplifies extracting multiple properties into separate variables.
+Difference between prototypal and classical inheritance.
+
+Prototypal inheritance is based on objects inheriting from other objects using prototypes.
+Classical inheritance uses classes to define a blueprint for creating objects.
+What is a Temporal Dead Zone?
+
+Temporal Dead Zone is the period between the block scope creation and variable initialization where accessing let or const variables results in a ReferenceError.
+It ensures variables are not accessible before their declaration in the code.
+What do you mean by JavaScript Design Patterns?
+
+JavaScript design patterns are reusable solutions to common problems in JavaScript development.
+Examples include Singleton, Factory, and Observer patterns.
+Is JavaScript a pass-by-reference or pass-by-value language?
+
+JavaScript is pass-by-value for primitive data types.
+It is pass-by-reference for objects, meaning changes to the object properties affect the original reference.
+Difference between Async/Await and Generators usage to achieve the same functionality.
+
+Async/await is syntactic sugar for Promises, making asynchronous code look synchronous.
+Generators use yield to pause and resume functions, requiring a manual iterator or library to handle asynchronous workflows.
+What are the primitive data types in JavaScript?
+
+The primitive data types are: String, Number, BigInt, Boolean, Symbol, Undefined, and Null.
+These types are immutable and not objects.
+What is the role of deferred scripts in JavaScript?
+
+Deferred scripts are executed after the HTML document is fully parsed but before DOMContentLoaded event.
+They improve page load performance by avoiding blocking HTML parsing.
+What has to be done in order to put Lexical Scoping into practice?
+
+Use nested functions to create closures that retain access to their parent scope variables.
+Define variables in the appropriate block to limit their scope to that block.
+
+
+
+
