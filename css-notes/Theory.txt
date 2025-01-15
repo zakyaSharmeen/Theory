@@ -1,0 +1,29 @@
+What is the CSS box model?
+The CSS box model describes the rectangular boxes generated for elements, consisting of content, padding, border, and margin. It determines how space is allocated and how elements are displayed.
+
+What is the difference between class and id selectors in CSS?
+The id selector is unique to a single element on the page and is identified by #id, while the class selector can be applied to multiple elements and is identified by .class.
+
+What is the z-index in CSS?
+The z-index property controls the stacking order of elements on the page. Elements with a higher z-index value will appear in front of those with a lower value.
+
+What are pseudo-classes in CSS? Provide an example.
+Pseudo-classes are used to define the special state of an element, like when a user hovers over it. Example: a:hover applies styles when the user hovers over a link.
+
+Explain the difference between position: absolute; and position: relative;.
+position: absolute; positions an element relative to its closest positioned ancestor, while position: relative; positions an element relative to its normal position in the document flow.
+
+What is Flexbox in CSS and how does it work?
+Flexbox is a layout model that provides an easy and efficient way to align and distribute space among items in a container. The container uses display: flex;, and its children can be aligned using properties like justify-content, align-items, and flex-wrap.
+
+What is the difference between inline, block, and inline-block elements?
+inline elements take up only as much width as their content and do not start a new line. block elements take up the full width available and start on a new line. inline-block elements behave like inline elements but can have width and height applied.
+
+What is the display: none; property in CSS?
+display: none; removes an element from the document layout, making it invisible and not taking up space, while visibility: hidden; hides the element but still reserves space for it.
+
+What is the purpose of the @media query in CSS?
+@media queries are used to apply different styles based on the screen size, device type, or other conditions, making the website responsive.
+
+What is the difference between em and rem units in CSS?
+em is relative to the font-size of its closest parent or element, while rem is relative to the root element's (<html>) font size.

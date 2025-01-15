@@ -1,0 +1,29 @@
+What is the difference between HTML and HTML5?
+HTML5 introduced new elements like <article>, <section>, <nav>, and <footer>, as well as new APIs for web apps, improved support for multimedia (audio and video), and enhanced semantic features.
+
+What are semantic elements in HTML? Can you provide examples?
+Semantic elements clearly describe their meaning in a human- and machine-readable way. Examples: <header>, <footer>, <article>, <section>, <nav>.
+
+What is the purpose of the alt attribute in the <img> tag?
+The alt attribute provides a text description of an image for screen readers, improving accessibility for users with visual impairments.
+
+What is the difference between the <div> and <span> tags?
+<div> is a block-level element, used for grouping content. <span> is an inline element, used for styling a part of text or content within a line.
+
+Explain the DOCTYPE declaration.
+The DOCTYPE declaration defines the document type and version of HTML being used (e.g., <!DOCTYPE html> for HTML5), helping browsers render the page correctly.
+
+What are meta tags, and why are they important?
+Meta tags provide metadata about the HTML document (like description, keywords, author, and charset). They are important for SEO and improving page indexing.
+
+What is the purpose of the target attribute in the <a> tag?
+The target attribute specifies where to open the linked document. For example, target="_blank" opens the link in a new tab.
+
+How can you create a table in HTML?
+Use the <table> tag, and within it, define rows with <tr>, table headers with <th>, and table data with <td>.
+
+What are the new input types in HTML5?
+New input types in HTML5 include email, date, url, tel, range, color, and number, allowing for more specific input fields and validation.
+
+What is the difference between the <link> and <a> tags in HTML?
+The <link> tag is used to link external resources (e.g., CSS files) to the document, while the <a> tag is used to create hyperlinks to navigate between pages.
