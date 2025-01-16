@@ -1,0 +1,9 @@
+jwt tokem- json web token
+
+1---------User logs in with credentials (email, password).
+2--------Server verifies credentials and generates a JWT token if valid.
+3--------Server sends the token to the client (response or cookie).
+4-----Client stores the token (e.g., localStorage or HTTP-only cookie).
+5------Client sends the token in requests (Authorization header).
+6------Server verifies the token and grants access if valid.
+7------Token expires after a set time, requiring re-login or refresh.
