@@ -13,49 +13,89 @@ jwt tokem- json web token
 
 1. What is Node.js and Where can you use it?
 Node.js is a cross-platform, open-source JavaScript runtime for running web applications outside the browser.
-It is ideal for I/O-intensive applications such as video streaming, real-time web apps, and distributed systems.
+Node.js is considered cross-platform because it can run on multiple operating systems, including:
+Windows
+macOS
+Linux
+
 2. Why use Node.js?
 Node.js is fast, non-blocking, and supports asynchronous programming.
-It simplifies development by offering a unified programming language and better concurrency.
+
 3. How does Node.js work?
-Node.js processes client requests using an event-driven architecture with an event loop.
-Simple requests are handled in the event loop, while complex tasks are delegated to a thread pool for execution.
+Node.js works on event-driven architecture with an event loop.
+
+the Node.js workflow from client request to server response:
+Client Makes a Request: Client (browser/app) sends an HTTP request to the Node.js server.
+Node.js Server Receives the Request: Node.js listens for incoming requests on a specific port.
+Request Passed to Event Loop: Request is handled asynchronously by the event loop.
+Processing the Request (Asynchronous Operations): Node.js performs I/O operations (e.g., DB queries, file reads) without blocking the thread.
+Callback Execution: Callback functions are triggered once asynchronous tasks are complete.
+Server Sends Response to Client: Server sends the response back to the client (e.g., HTML, JSON).
+Client Receives the Response: Client processes and displays the response.
+
 4. Why is Node.js Single-threaded?
 It uses a single-threaded event loop for asynchronous processing, improving performance and scalability under typical web loads.
+
 5. How does Node.js handle concurrency?
+Concurrency refers to the ability of a system to handle multiple tasks or processes at the same time,
 It uses a Single-Threaded Event Loop Model influenced by JavaScript's event-based and callback systems to efficiently manage concurrent requests.
+
 6. What is a callback in Node.js?
 A callback is a function executed after a task is completed, allowing other code to run concurrently without blocking.
+
 7. Advantages of promises over callbacks
-Promises improve readability, offer structured control flow, and built-in error handling, while reducing code coupling.
+Promises improve readability,
+ offer structured control flow,
+  and built-in error handling,
+   while reducing code coupling.(Coupling is the level of dependency between different parts (modules) of a program)
+
 8. Definition of I/O in Node.js
 I/O involves the transfer of data between mediums like devices, networks, or files, where each transfer is an input for one medium and output for another.
+
 9. Frequent Uses of Node.js
-Real-time chats, IoT, streaming apps, single-page apps (SPAs), real-time collaboration tools, and microservices architecture.
+Real-time chats,
+ streaming app
+
 10. Difference between Frontend and Backend Development
 Frontend: Client-side, focuses on user interaction, visual elements, using technologies like HTML, CSS, and JavaScript.
 Backend: Server-side, handles behind-the-scenes logic and database interactions using languages like Node.js, Python, or Java.
+
 11. What is NPM?
-NPM (Node Package Manager) is used to manage Node.js packages and modules. It provides online repositories and command-line tools for package installation and dependency management.
+NPM (Node Package Manager) is used to manage Node.js packages and modules. 
+It provides online repositories and command-line tools for package installation and dependency management.
+
 12. Modules in Node.js
-Modules are libraries that include functions for specific tasks, such as HTTP for server creation, fs for file handling, and util for utility functions.
+A module in Node.js is a reusable piece of code that can be included in other files. It helps organize functionality, making it easier to manage and maintain.
+
 13. Purpose of module.exports
 module.exports is used to export functions or objects from one file so they can be reused in another file.
+
 14. Why is Node.js preferred over other backend technologies?
-Node.js is fast, highly synchronized, ideal for real-time apps, and has a vast package ecosystem (NPM) for rapid development.
+Node.js is fast, 
+even-driven architecture,
+and has a vast package ecosystem (NPM) for rapid development.
+
 15. Angular vs. Node.js
 Angular: A frontend framework for building SPAs, written in TypeScript.
 Node.js: A backend runtime for building scalable server-side apps, written in C and C++.
+
 16. Database commonly used with Node.js
 MongoDB, a NoSQL, document-oriented database, is the most commonly used database with Node.js for its scalability and performance.
+
 17. Commonly Used Node.js Libraries
 ExpressJS: Framework for building web and mobile apps.
 Mongoose: Simplifies database connectivity for MongoDB.
+
 18. Pros and Cons of Node.js
-Pros: Fast, event-driven, JavaScript-based, large package ecosystem, great for I/O-intensive tasks.
+Pros: Fast, event-driven, JavaScript-based, large package ecosystem,
 Cons: Not ideal for CPU-intensive tasks, callback complexity, and limited suitability for relational databases.
+(CPU-intensive tasks are tasks that require a lot of processing power from your computer's CPU, like:
+Performing complex calculations
+Processing large images or videos)
+
 19. Command to import external libraries
 Use the require command (e.g., var http = require('http');).
+
 20. Event-driven Programming in Node.js
 Events trigger specific functions, allowing for non-blocking execution. For example, a callback runs when a user clicks a button.
 
