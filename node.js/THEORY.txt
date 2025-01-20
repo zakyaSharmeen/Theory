@@ -7,3 +7,401 @@ jwt tokem- json web token
 5------Client sends the token in requests (Authorization header).
 6------Server verifies the token and grants access if valid.
 7------Token expires after a set time, requiring re-login or refresh.
+
+
+
+
+1. What is Node.js and Where can you use it?
+Node.js is a cross-platform, open-source JavaScript runtime for running web applications outside the browser.
+It is ideal for I/O-intensive applications such as video streaming, real-time web apps, and distributed systems.
+2. Why use Node.js?
+Node.js is fast, non-blocking, and supports asynchronous programming.
+It simplifies development by offering a unified programming language and better concurrency.
+3. How does Node.js work?
+Node.js processes client requests using an event-driven architecture with an event loop.
+Simple requests are handled in the event loop, while complex tasks are delegated to a thread pool for execution.
+4. Why is Node.js Single-threaded?
+It uses a single-threaded event loop for asynchronous processing, improving performance and scalability under typical web loads.
+5. How does Node.js handle concurrency?
+It uses a Single-Threaded Event Loop Model influenced by JavaScript's event-based and callback systems to efficiently manage concurrent requests.
+6. What is a callback in Node.js?
+A callback is a function executed after a task is completed, allowing other code to run concurrently without blocking.
+7. Advantages of promises over callbacks
+Promises improve readability, offer structured control flow, and built-in error handling, while reducing code coupling.
+8. Definition of I/O in Node.js
+I/O involves the transfer of data between mediums like devices, networks, or files, where each transfer is an input for one medium and output for another.
+9. Frequent Uses of Node.js
+Real-time chats, IoT, streaming apps, single-page apps (SPAs), real-time collaboration tools, and microservices architecture.
+10. Difference between Frontend and Backend Development
+Frontend: Client-side, focuses on user interaction, visual elements, using technologies like HTML, CSS, and JavaScript.
+Backend: Server-side, handles behind-the-scenes logic and database interactions using languages like Node.js, Python, or Java.
+11. What is NPM?
+NPM (Node Package Manager) is used to manage Node.js packages and modules. It provides online repositories and command-line tools for package installation and dependency management.
+12. Modules in Node.js
+Modules are libraries that include functions for specific tasks, such as HTTP for server creation, fs for file handling, and util for utility functions.
+13. Purpose of module.exports
+module.exports is used to export functions or objects from one file so they can be reused in another file.
+14. Why is Node.js preferred over other backend technologies?
+Node.js is fast, highly synchronized, ideal for real-time apps, and has a vast package ecosystem (NPM) for rapid development.
+15. Angular vs. Node.js
+Angular: A frontend framework for building SPAs, written in TypeScript.
+Node.js: A backend runtime for building scalable server-side apps, written in C and C++.
+16. Database commonly used with Node.js
+MongoDB, a NoSQL, document-oriented database, is the most commonly used database with Node.js for its scalability and performance.
+17. Commonly Used Node.js Libraries
+ExpressJS: Framework for building web and mobile apps.
+Mongoose: Simplifies database connectivity for MongoDB.
+18. Pros and Cons of Node.js
+Pros: Fast, event-driven, JavaScript-based, large package ecosystem, great for I/O-intensive tasks.
+Cons: Not ideal for CPU-intensive tasks, callback complexity, and limited suitability for relational databases.
+19. Command to import external libraries
+Use the require command (e.g., var http = require('http');).
+20. Event-driven Programming in Node.js
+Events trigger specific functions, allowing for non-blocking execution. For example, a callback runs when a user clicks a button.
+
+
+21. Event Loop in Node.js
+The event loop handles asynchronous callbacks and is the core of Node.js's non-blocking I/O model.
+It allows Node.js to manage concurrent operations on a single thread efficiently.
+22. process.nextTick() vs. setImmediate()
+process.nextTick(): Executes the callback immediately after the current operation completes but before the next event loop phase.
+setImmediate(): Executes the callback in the next cycle of the event loop after I/O events.
+23. EventEmitter in Node.js
+EventEmitter is a class that enables objects to emit and listen for events.
+When an event is emitted, all attached listener functions are called synchronously.
+24. Two Types of API Functions in Node.js
+Asynchronous (non-blocking): Allows other operations to proceed while waiting for the result.
+Synchronous (blocking): Stops execution until the operation is completed.
+25. package.json File
+Contains metadata about a Node.js project, including dependencies, scripts, and version information.
+Created using npm init and serves as the project's configuration file.
+26. Using the URL Module
+The URL module parses and resolves web addresses into structured components.
+Example:
+javascript
+Copy
+Edit
+const url = require('url');
+const parsedUrl = url.parse('http://example.com');
+27. Express.js Package
+A lightweight Node.js framework for building web and mobile applications with robust features for routing, middleware, and HTTP requests.
+28. Creating a Simple Express.js Application
+Import express and create an app:
+javascript
+Copy
+Edit
+const express = require('express');
+const app = express();
+app.get('/', (req, res) => res.send('Hello World'));
+app.listen(3000);
+29. Streams in Node.js
+Enable continuous reading or writing of data.
+Types: Readable, Writable, Duplex, and Transform.
+30. Installing, Updating, and Deleting Dependencies
+Install: npm install <package>
+Update: npm update <package>
+Delete: npm uninstall <package>
+31. Creating a Simple Server in Node.js
+Example server returning "Hello World":
+javascript
+Copy
+Edit
+const http = require('http');
+const server = http.createServer((req, res) => {
+  res.end('Hello World');
+});
+server.listen(8080);
+32. Asynchronous and Non-blocking APIs in Node.js
+Asynchronous APIs don’t block program execution while waiting for operations to complete.
+Notifications are sent to the event loop when the task is finished.
+33. Implementing Async in Node.js
+Use the async/await syntax to handle asynchronous operations.
+javascript
+Copy
+Edit
+async function fetchData() {
+  const data = await fetch('http://example.com');
+  console.log(data);
+}
+34. Callback Function in Node.js
+A function executed after a task completes to prevent blocking, allowing other operations to run concurrently.
+35. REPL in Node.js
+Stands for Read Eval Print Loop, an interactive console for executing JavaScript commands.
+36. Control Flow Function
+Manages the execution of multiple asynchronous functions to ensure proper sequencing and data handling.
+37. How Control Flow Manages Function Calls
+Uses techniques like callbacks, promises, or async/await to handle asynchronous functions in a specified order.
+38. fork() vs. spawn() in Node.js
+fork(): Creates a new V8 instance for multi-process execution.
+spawn(): Launches a new process using commands without creating a new V8 instance.
+39. Buffer Class in Node.js
+Used to handle raw binary data, stored outside the V8 heap, enabling compatibility with binary streams.
+40. Piping in Node.js
+Connects one stream’s output to another stream’s input. Example:
+javascript
+Copy
+Edit
+const fs = require('fs');
+const readable = fs.createReadStream('file.txt');
+const writable = fs.createWriteStream('copy.txt');
+readable.pipe(writable);
+41. Flags in Read/Write Operations
+Flags: Control how files are accessed, e.g., r (read), w (write), a (append).
+
+
+42. How to Open a File in Node.js
+Use the fs.open() method from the fs module:
+javascript
+Copy
+Edit
+const fs = require('fs');
+fs.open('example.txt', 'r', (err, file) => {
+  if (err) throw err;
+  console.log('File opened!');
+});
+Modes include: 'r' for reading, 'w' for writing, 'a' for appending, etc.
+43. What is Callback Hell?
+Callback Hell occurs when there are multiple nested callbacks, resulting in unreadable and unmanageable code.
+Example of Callback Hell:
+javascript
+Copy
+Edit
+asyncFunction1(() => {
+  asyncFunction2(() => {
+    asyncFunction3(() => {
+      console.log('Done');
+    });
+  });
+});
+Solution: Use Promises or async/await to flatten the structure.
+44. Reactor Pattern in Node.js
+A design pattern used to manage non-blocking I/O operations.
+It uses an event demultiplexer to handle multiple I/O requests concurrently and assign handlers for processing events.
+45. What is a Test Pyramid?
+A Test Pyramid is a testing strategy that emphasizes:
+Unit Tests: Most tests, fast and reliable.
+Integration Tests: Moderate number of tests, checking module interactions.
+UI Tests: Fewest tests, slow but ensures end-to-end functionality.
+46. Why Does Google Use the V8 Engine in Node.js?
+The V8 Engine:
+Converts JavaScript into efficient machine code via JIT (Just-In-Time) compilation.
+Optimized for performance and speed.
+Google uses V8 in Chrome and Node.js due to its scalability and efficiency in executing JavaScript.
+47. Node.js Exit Codes
+Common exit codes:
+0: Success.
+1: Uncaught fatal exception.
+5: Fatal error in V8.
+9: Invalid arguments.
+128 + Signal Number: Termination by signal (e.g., SIGKILL).
+48. Middleware in Node.js
+Functions that execute in the request-response cycle.
+Tasks performed:
+Execute code.
+Modify req and res objects.
+End the request or call the next middleware.
+Example in Express:
+javascript
+Copy
+Edit
+app.use((req, res, next) => {
+  console.log('Middleware executed!');
+  next();
+});
+49. HTTP Request Types
+GET: Retrieve data.
+POST: Submit or create data.
+PUT: Update existing data.
+DELETE: Remove data.
+HEAD: Retrieve headers without the body.
+PATCH: Partial updates to data.
+50. Connecting MongoDB to Node.js
+Use the mongodb package:
+javascript
+Copy
+Edit
+const { MongoClient } = require('mongodb');
+const uri = "mongodb://localhost:27017/mydb";
+MongoClient.connect(uri, (err, db) => {
+  if (err) throw err;
+  console.log("Database connected!");
+  db.close();
+});
+51. Purpose of NODE_ENV
+Environment variable to define the environment (development, production, etc.).
+Improves performance by disabling unnecessary logging in production:
+bash
+Copy
+Edit
+NODE_ENV=production node app.js
+52. Node.js Timing Features
+setTimeout(): Executes a function after a delay.
+setInterval(): Executes a function at regular intervals.
+setImmediate(): Executes a function after the current event loop.
+process.nextTick(): Executes a function before the next event loop.
+53. What is WASI?
+WASI: WebAssembly System Interface.
+Provides a sandboxed environment for running WebAssembly code with access to system resources like file systems and networking.
+54. First-Class Functions in JavaScript
+Functions are treated as values:
+Passed as arguments.
+Returned from other functions.
+Assigned to variables or properties.
+Example:
+javascript
+Copy
+Edit
+const sayHello = () => console.log('Hello');
+const execute = (func) => func();
+execute(sayHello);
+55. Managing Packages in Node.js
+Install: npm install <package>.
+Update: npm update <package>.
+Remove: npm uninstall <package>.
+Global Install: npm install -g <package>.
+56. Advantages of Node.js
+Single-threaded, event-driven architecture.
+High performance due to non-blocking I/O.
+Suitable for real-time applications like chat or gaming.
+57. What is Fork in Node.js?
+Creates a child process with its own Node.js instance:
+javascript
+Copy
+Edit
+const { fork } = require('child_process');
+const child = fork('child.js');
+58. Async.queue Arguments
+Worker function: Processes tasks.
+Concurrency limit: Maximum number of tasks processed in parallel.
+59. Purpose of module.exports
+Exports functions, objects, or values from a module for use in other files:
+javascript
+Copy
+Edit
+module.exports = {
+  greet: () => console.log('Hello'),
+};
+60. Tools for Consistent Code Style
+ESLint: Linter for enforcing coding standards.
+Prettier: Formatter for consistent code style.
+Jest: Testing framework for maintaining quality.
+61. JavaScript vs. Node.js
+JavaScript: Programming language.
+Node.js: Runtime for executing JavaScript outside browsers.
+62. Synchronous vs. Asynchronous Functions
+Synchronous: Blocks execution until completion.
+Asynchronous: Allows other tasks to execute while waiting for results.
+63. Asynchronous Tasks in Event Loop
+I/O operations.
+Timers (setTimeout, setInterval).
+Promises and async/await.
+64. Order of Execution in Control Flow
+Microtasks (e.g., process.nextTick, Promises) execute before macrotasks (e.g., I/O, timers).
+65. Input Arguments for Async Queue
+Worker function.
+Concurrency limit (optional).
+66. Disadvantages of Node.js
+Poor performance for CPU-intensive tasks.
+Single-threaded architecture may struggle with large-scale computation.
+67. Primary Reason for Event-Based Model
+Non-blocking I/O improves scalability and resource efficiency.
+68. Node.js vs. AJAX
+AJAX: Asynchronous communication between browser and server.
+Node.js: Server-side runtime for JavaScript.
+69. Advantages of Node.js
+High performance, scalability, and ease of development.
+Real-time capabilities.
+70. Node.js on Windows
+Fully supported as a cross-platform runtime environment.
+
+
+71. Can you access DOM in Node?
+No, Node.js cannot access the DOM as it runs outside the browser.
+The DOM is a browser-specific API for manipulating HTML and XML documents.
+72. Why is Node.js gaining attention from Java programmers?
+Node.js is fast and efficient, thanks to its V8 engine, making it appealing for performance-oriented applications.
+It offers scalability and a lightweight runtime compared to Java.
+73. Challenges with Node.js
+Node.js is single-threaded, which makes handling CPU-intensive tasks challenging.
+Being relatively new, Node.js has fewer resources and a smaller ecosystem compared to older technologies like Java.
+74. What is "non-blocking" in Node.js?
+Non-blocking refers to executing multiple tasks simultaneously without waiting for the completion of previous tasks.
+Achieved using asynchronous I/O operations.
+75. How does Node.js overcome blocking I/O?
+Node.js uses an event-driven architecture to manage asynchronous tasks efficiently.
+It employs a single-threaded event loop to handle multiple requests simultaneously.
+76. How can we use async/await in Node.js?
+Mark functions as asynchronous using the async keyword.
+Use the await keyword to pause the execution until a promise is resolved.
+77. Why separate Express app and server?
+Enhances testability by isolating app logic from server logic.
+Simplifies scaling and switching servers without major code changes.
+78. What is a stub in Node.js?
+A stub is a simplified function used as a placeholder during testing.
+It allows for predictable and consistent unit tests.
+79. Frameworks majorly used in Node.js
+Express: Most popular framework for building web applications.
+Koa: Lightweight alternative to Express with modern middleware capabilities.
+80. Security implementations in Node.js
+Running code in a sandboxed environment to prevent malicious access.
+Using TLS/SSL to encrypt data for secure communication.
+81. What is Libuv?
+Libuv is a multi-platform library that enables Node.js to perform asynchronous I/O operations.
+It provides the thread pool and handles the event loop.
+82. Global objects in Node.js
+process: Provides information and control over the Node.js process.
+console: Used for logging messages and debugging.
+83. Why is assert used in Node.js?
+The assert module is used to write simple, declarative tests.
+It helps in validating assumptions and throwing errors when tests fail.
+84. Why is ExpressJS used?
+Simplifies building web applications and APIs with a robust routing system.
+Offers middleware support for handling tasks like authentication and logging.
+85. Use of the Connect module in Node.js
+Connect handles middleware for request and response processing.
+Supports error handling, cookie parsing, and session management.
+86. Difference between front-end and back-end development
+Front-end handles the client-side interface and user experience.
+Back-end manages server-side logic, databases, and APIs.
+87. LTS releases of Node.js
+LTS (Long-Term Support) releases are stable and recommended for production.
+They receive extended support, typically for 30 months.
+88. What is ESLint?
+ESLint is a tool for identifying and fixing JavaScript code issues.
+It enforces coding standards and prevents common errors.
+89. Test pyramid in HTTP APIs
+Focus on writing more unit tests, fewer integration tests, and minimal end-to-end tests.
+Test each endpoint in isolation first, then test interactions and full API workflows.
+90. How does Node.js handle child threads?
+Node.js creates separate instances of the runtime for child threads.
+This ensures parallel execution without blocking the main thread.
+91. What is an Event Emitter in Node.js?
+Event Emitters facilitate communication by emitting and listening to events.
+They are core to Node.js's event-driven architecture.
+92. Enhancing performance through clustering
+Clustering allows multiple Node.js instances to run on different CPU cores.
+Improves performance by distributing the workload across threads.
+93. What is a thread pool, and which library handles it?
+A thread pool allows multiple tasks to run in parallel efficiently.
+Node.js uses the libuv library to manage the thread pool.
+94. Difference between worker threads and clusters
+Worker threads run multiple threads in a single process.
+Clusters create multiple processes, each with its own memory and runtime.
+95. Measuring the duration of async operations
+Use console.time and console.timeEnd to measure code execution time.
+Use performance.now for higher precision in measuring timestamps.
+96. Measuring performance of async operations
+Use Node.js's --prof flag for profiling.
+Tools like benchmark.js and perf help analyze performance.
+97. Types of streams in Node.js
+Readable, Writable, Duplex, and Transform streams are available for handling data efficiently.
+Streams allow processing large files in chunks, improving performance.
+98. What is meant by tracing in Node.js?
+Tracing records function calls and events for analyzing performance bottlenecks.
+Useful for debugging and optimizing application performance.
+99. Where is package.json used in Node.js?
+Defines project metadata like name, version, and author.
+Lists dependencies and scripts for managing the project.
+100. Difference between readFile and createReadStream
+readFile reads the entire file into memory at once, suitable for small files.
+createReadStream reads files in chunks, ideal for large files.
