@@ -27,3 +27,314 @@ New input types in HTML5 include email, date, url, tel, range, color, and number
 
 What is the difference between the <link> and <a> tags in HTML?
 The <link> tag is used to link external resources (e.g., CSS files) to the document, while the <a> tag is used to create hyperlinks to navigate between pages.
+
+
+1. What is HTML?
+It is the standard language for creating web pages.
+Uses tags to structure content.
+
+2. What are HTML tags?
+Tags define elements on a webpage.
+Some tags are self-closing, like <img>.
+
+3. What are HTML Attributes?
+Modify the behavior of HTML tags.
+Example: <img src="image.jpg"> (src defines image source).
+
+4. What is a marquee in HTML?
+Creates scrolling text or images.
+Uses <marquee> tag (deprecated in modern HTML).
+
+5. How do you separate a section of text in HTML?
+<br> for line breaks, <p> for paragraphs.
+<blockquote> for large quoted sections.
+
+6. Define the list types in HTML.
+<ol> for ordered (numbered) lists.
+<ul> for unordered (bulleted) lists.
+
+7. How do you align list elements in an HTML file?
+Use indentation for clarity.
+CSS can be used for precise alignment.
+
+8. Difference between Ordered and Unordered lists?
+Ordered lists <ol> use numbers.
+Unordered lists <ul> use bullets.
+
+9. What is an element in HTML?
+A combination of a start tag, content, and an end tag.
+Example: <h1>Hello</h1>.
+
+10. Difference between HTML and CSS?
+HTML structures the webpage.
+CSS styles and designs the webpage.
+
+11. Are HTML tags and elements the same?
+Tags define elements.
+Elements include content within tags.
+
+12. What are void elements in HTML?
+Elements without closing tags.
+Examples: <br>, <img>, <hr>.
+
+13. Advantage of collapsing white space?
+Saves space and improves performance.
+HTML automatically reduces extra spaces.
+
+14. What are HTML Entities?
+Used to display reserved/special characters.
+Example: &copy; for ©.
+
+15. How do you display a table in HTML?
+Use <table>, <tr>, and <td> tags.
+<th> for headers, <caption> for titles.
+
+16. How to insert a comment in HTML?
+Use <!-- Comment -->.
+Comments help organize code but don't display on the page.
+
+17. How to insert a copyright symbol?
+Use &copy; or &#169;.
+Displays © on the page.
+
+18. What is white space in HTML?
+Extra spaces, tabs, or new lines.
+Browsers collapse multiple spaces into one.
+
+19. How to link within the same webpage?
+Use <a href="#sectionID">Link</a>.
+Add id="sectionID" to the target section.
+
+20. How to create a hyperlink?
+Use <a href="URL">Text</a>.
+Links can open in the same or new tab (target="_blank").
+
+21. What is an image map?
+Makes different areas of an image clickable.
+Uses <map> and <area> tags.
+
+22. Why use a stylesheet?
+Keeps design consistent across pages.
+Allows easy design updates.
+
+23. What is semantic HTML?
+Uses meaningful tags like <article>, <header>, <footer>.
+Improves accessibility and SEO.
+
+24. What is SVG in HTML?
+Scalable Vector Graphics for drawings.
+Uses <svg> to create vector images.
+
+25. What happens if there's no text between tags?
+Some tags require content to display.
+Empty elements like <img> still work.
+
+26. How to create nested web pages?
+Use <iframe> to embed another webpage.
+Example: <iframe src="page.html"></iframe>.
+
+27. How to add buttons in HTML?
+Use <button> tag.
+Example: <button>Click Me</button>.
+
+28. Different types of headings?
+<h1> to <h6> (largest to smallest).
+<h1> is most important for SEO.
+
+29. How to insert an image?
+Use <img src="image.jpg" alt="Description">.
+alt attribute provides alternative text.
+
+30. How to insert a hyperlink?
+Use <a href="https://example.com">Click Here</a>.
+Can link to external or internal pages.
+
+31. How to add color to text?
+Use style="color:red;" inside a tag.
+Example: <p style="color:blue;">Hello</p>.
+
+32. Ways to add CSS to HTML?
+Inline: style="color:red;".
+Internal: <style> tag.
+External: <link rel="stylesheet" href="style.css">.
+
+33. CSS hierarchy order?
+Inline CSS > Internal CSS > External CSS.
+Specificity determines which style is applied.
+
+34. How to add JavaScript?
+Inline: <button onclick="alert('Hello')">Click</button>.
+External: <script src="script.js"></script>.
+
+38. What is the ‘class' attribute in HTML?
+Defines a group of elements for styling.
+Used for applying CSS or JavaScript to multiple elements.
+
+39. What is the difference between ‘id’ and ‘class’ attributes?
+id is unique (used once per page).
+class can be applied to multiple elements.
+
+40. What is the difference between HTML and XHTML?
+XHTML is stricter and requires well-formed code.
+XHTML enforces closing tags and quoted attributes.
+
+41. What is the difference between HTML and HTML5?
+HTML5 supports multimedia (video, audio).
+Improved semantics and mobile support.
+
+42. What is the role of the <head> tag?
+Contains metadata about the webpage.
+Includes title, styles, and scripts.
+
+43. What is the role of the <meta> tag?
+Provides metadata like description and keywords.
+Helps with SEO and browser behavior.
+
+44. What is the difference between an absolute and relative URL?
+Absolute URL includes the full web address.
+Relative URL is based on the current page location.
+
+45. What is the role of the alt attribute?
+Provides alternative text for images.
+Helps with accessibility and SEO.
+
+46. What is the role of the title attribute?
+Displays a tooltip on hover.
+Provides additional information about an element.
+
+47. What is a form in HTML?
+A structure for collecting user input.
+Used for login, feedback, or transactions.
+
+48. Types of form input fields?
+Text fields, checkboxes, radio buttons, dropdowns.
+Text areas for multiline input.
+
+49. What is the role of the action attribute in forms?
+Specifies the URL where form data is sent.
+Defines the server endpoint for processing.
+
+50. What is the role of the method attribute in forms?
+GET retrieves data from the server.
+POST sends data securely to the server.
+
+51. How many ways can HTML elements be displayed?
+Block (starts a new line).
+Inline (stays within text flow).
+
+52. Difference between display: none and visibility: hidden?
+display: none removes the element from layout.
+visibility: hidden hides it but keeps the space.
+
+53. How to specify links in HTML?
+Use the <a> tag with the href attribute.
+target="_blank" opens the link in a new tab.
+
+54. Ways to specify CSS styles in HTML?
+Inline (directly in the tag).
+Internal (inside <style> in <head>).
+External (linked CSS file).
+
+55. Difference between <link> and <a> tags?
+<link> connects external resources (CSS).
+<a> creates hyperlinks to other pages.
+
+56. When to use scripts in <head> vs <body>?
+<head>: For scripts that should load before rendering.
+<body>: For scripts that interact with page content.
+
+57. How to create a form in HTML?
+Use the <form> tag.
+Include <input>, <textarea>, and <button>.
+
+58. How to handle events in HTML?
+Use JavaScript event handlers like onclick or onchange.
+Use addEventListener() for better control.
+
+59. Advantages of HTML5 over previous versions?
+Native support for video and audio.
+Improved semantics and form elements.
+
+60.Is drag and drop possible using HTML5, and how?
+Use draggable="true" to make an element draggable.
+Handle ondragstart, ondragover, and ondrop events for functionality.
+
+61.What is the difference between SVG and Canvas?
+SVG is vector-based and scalable, ideal for graphics that require manipulation.
+Canvas is pixel-based, better for complex animations and real-time rendering.
+
+62.What audio file types are supported in HTML5?
+Supports MP3, WAV, and OGG (browser-dependent).
+Use the <audio> tag with <source> elements for compatibility.
+
+63.What are the main goals of HTML5?
+Improve cross-platform compatibility (PC, tablet, mobile).
+Provide rich media support without extra plugins like Flash.
+
+64.Explain Web Storage in HTML5.
+localStorage stores data permanently until deleted.
+sessionStorage stores data only for the session duration.
+
+65.What is Microdata in HTML5?
+Helps search engines better understand page content.
+Uses attributes like itemprop and itemtype for structured data.
+
+66.Which tag represents the result of a calculation?
+<output> is used to display calculation results.
+Works with JavaScript and <input> elements for dynamic updates.
+
+67.How can we include audio or video in a webpage?
+Use <audio> and <video> tags with <source> for multiple formats.
+Attributes like controls, autoplay, and loop enhance functionality.
+
+1.Explain HTML5 Graphics.
+SVG is used for scalable vector graphics.
+Canvas allows JavaScript-based dynamic rendering.
+
+What are new input types in HTML5 forms?
+Examples: email, date, color, range, number.
+Helps with built-in validation and user-friendly inputs.
+
+What are the new media elements in HTML5?
+<audio> for embedding sound files.
+<video> for embedding video content.
+
+Why is drag-and-drop functionality important in HTML5?
+Enables native drag-and-drop without extra JavaScript libraries.
+Used for file uploads, UI interactions, and data organization.
+
+Why do we need the MathML element in HTML5?
+Used for displaying mathematical formulas in browsers.
+Must be enclosed within <math> tags.
+
+What are Server-Sent Events (SSE) in HTML5?
+One-way real-time communication from server to client.
+Uses EventSource API to receive automatic updates.
+
+What are Web Workers in HTML5?
+Allows JavaScript to run in background threads.
+Prevents UI from freezing during intensive operations.
+
+What is the purpose of the novalidate attribute in forms?
+Disables form validation on submission.
+Useful for saving incomplete forms.
+
+What are raster and vector images?
+Raster: Made of pixels (JPEG, PNG) and loses quality when scaled.
+Vector: Uses mathematical paths (SVG) and is resolution-independent.
+
+How do you support SVG in older browsers?
+Use the <object> tag to embed .svg files.
+Utilize polyfills like Modernizr for fallback support.
+
+What are different approaches to making images responsive?
+Use CSS media queries to adjust image size based on screen width.
+Use srcset attribute to provide multiple image resolutions.
+
+What is a manifest file in HTML5?
+Defines files for offline caching.
+Deprecated in favor of Service Workers.
+
+What is the Geolocation API in HTML5?
+Retrieves user location using navigator.geolocation.
+Uses getCurrentPosition() to fetch latitude and longitude.

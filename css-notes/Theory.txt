@@ -27,3 +27,127 @@ What is the purpose of the @media query in CSS?
 
 What is the difference between em and rem units in CSS?
 em is relative to the font-size of its closest parent or element, while rem is relative to the root element's (<html>) font size.
+
+
+
+CSS Frameworks
+
+Examples: Bootstrap, Foundation, Semantic UI.
+They simplify styling and layout.
+Universal Selector (*)
+
+Selects all elements.
+Used for global styling.
+Ruleset in CSS
+
+Contains selectors and declarations.
+Defines styles for elements.
+CSS Box Model Elements
+
+Content, padding, border, margin.
+Defines how elements are structured.
+CSS3 vs CSS2
+
+CSS3 has modules and better browser support.
+Includes new selectors and features.
+Ways to Add CSS to HTML
+
+Inline (style=""), Internal (<style> tag), External (.css file).
+External is best for reusability.
+Advantages of CSS
+
+Separates content and design.
+Reusable styles reduce redundancy.
+RGB in CSS
+
+Red, Green, Blue color model.
+Ranges from 0-255 for each color.
+Purpose of CSS
+
+Controls the appearance of websites.
+Separates content from styling.
+Class vs ID
+
+Class (.) is reusable, ID (#) is unique.
+Use classes for multiple elements.
+Intermediate CSS Interview Questions
+
+Z-index
+Controls overlapping elements.
+Higher values appear on top.
+
+CSS Sprites Benefits
+Reduces HTTP requests.
+Improves page load speed.
+
+Styling Multiple Elements
+Use a comma: h2, h3 { color: red; }
+Applies the same style to both.
+
+Media Types in CSS
+Print, screen, speech, etc.
+Used for responsive design.
+
+Control Image Repetition
+background-repeat: no-repeat;
+Prevents repeating background images.
+
+Background Attachment Property
+fixed keeps background still.
+scroll moves it with content.
+
+Font-Related Properties
+font-size, font-family, font-weight.
+Controls text appearance.
+
+Contextual Selectors
+Targets elements within a parent.
+Example: div p { color: red; }.
+
+Responsive Design
+Adapts to different screen sizes.
+Uses media queries and flexible layouts.
+
+CSS Syntax
+selector { property: value; }
+Uses semicolons and curly braces.
+
+CSS Limitations
+Browser compatibility issues.
+No parent selectors.
+
+Ways to Include CSS
+External, Internal, Inline, @import.
+External is most efficient.
+
+Types of CSS Selectors
+Universal, Class, ID, Attribute.
+Used for targeting elements.
+
+CSS Preprocessors (SASS, LESS, Stylus)
+Adds variables, nesting, functions.
+Enhances CSS capabilities.
+
+Viewport Units (VH/VW)
+VH = viewport height.
+VW = viewport width.
+
+Reset vs Normalize CSS
+Reset removes all default styles.
+Normalize keeps consistency across browsers.
+
+Block vs Inline vs Inline-Block
+Block takes full width.
+Inline only takes content width.
+
+Browser Testing
+Ensures compatibility.
+Fixes layout inconsistencies.
+
+Pseudo-Classes (:hover, :focus)
+Target elements in specific states.
+Example: a:hover { color: red; }.
+
+CSS Units (px, em, %)
+px is fixed.
+em and % are relative.
