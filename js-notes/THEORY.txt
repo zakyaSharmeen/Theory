@@ -24,7 +24,26 @@ comparision operators
 
 5-Difference between var and let keyword in JavaScript.
 var has function scope, while let has block scope.
-var declarations are hoisted and can be redeclared, whereas let cannot be redeclared in the same scope.
+✅ var can be accessed inside the function n  outside the block
+ex-function testVar() {
+    if (true) {
+        var x = 10;  
+    }
+    console.log(x); // ✅ Works! Output: 10
+}
+testVar();
+
+❌ let and const cannot be accessed outside their block.
+ex-function testLet() {
+    if (true) {
+        let y = 20;  
+    }
+    console.log(y); // ❌ Error! y is not defined outside the block
+}
+testLet();
+
+
+
 
 6-Explain Implicit Type Coercion in JavaScript.
 Implicit type coercion converts one data type to another automatically during operations.
@@ -46,6 +65,83 @@ Objects are passed by reference, so modifications affect the original object.
 10-What is an Immediately Invoked Function in JavaScript?
 An Immediately Invoked Function Expression (IIFE) executes immediately after definition.
 It is written as (function() { ... })() to create a private scope.
+
+functions----------------------------------------------------------------------------------------
+Here are 7 most important types of functions in JavaScript with simple examples:
+
+1️⃣ Function Declaration (Named function)
+function greet() {
+    console.log("Hello!");
+}
+greet(); // Output: Hello!
+
+2️⃣ Function Expression (Anonymous function stored in a variable)
+const greet = function() {
+    console.log("Hello!");
+};
+greet(); // Output: Hello!
+
+
+3️⃣ Arrow Function (Shorter syntax)
+const greet = () => console.log("Hello!");
+greet(); // Output: Hello!
+
+4️⃣ Immediately Invoked Function Expression (IIFE) (Runs immediately)
+(function() {
+    console.log("Hello!");
+})(); // Output: Hello!
+
+5️⃣ Higher-Order Function (Takes another function as a parameter)
+function operate(a, b, func) {
+    return func(a, b);
+}
+const add = (x, y) => x + y;
+console.log(operate(5, 3, add)); // Output: 8
+
+6️⃣ Callback Function (Function passed into another function)
+function greet(name, callback) {
+    console.log("Hello, " + name);
+    callback();
+}
+
+greet("Alice", () => console.log("Welcome!"));
+
+7️⃣ Recursive Function (Function calling itself)
+function countdown(n) {
+    if (n <= 0) return;
+    console.log(n);
+    countdown(n - 1);
+}
+countdown(3); // Output: 3, 2, 1
+
+8️⃣ Generator Function (function* - Can pause and resume execution)
+
+function* generateNumbers() {
+    yield 1;
+    yield 2;
+    yield 3;
+}
+
+const gen = generateNumbers();
+console.log(gen.next().value); // Output: 1
+console.log(gen.next().value); // Output: 2
+
+9️⃣ Constructor Function (Used to create objects)
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+const person1 = new Person("Alice", 25);
+console.log(person1.name); // Output: Alice
+
+🔟 Async Function (async/await - Handles asynchronous operations)
+async function fetchData() {
+    return "Data loaded!";
+}
+
+fetchData().then(console.log); // Output: Data loaded!
+/-------------------------------------------------------------------------------------
 
 11-What do you mean by strict mode in JavaScript and characteristics of JavaScript strict-mode?
 the "use strict"keyword is used to define strict mode in  JavaScript
