@@ -311,6 +311,23 @@ What has to be done in order to put Lexical Scoping into practice?
 Use nested functions to create closures that retain access to their parent scope variables.
 Define variables in the appropriate block to limit their scope to that block.
 
+define closures
+A closure happens when a function remembers the variables from where it was created — even after that outer function has finished running.
+
+function outerFunction() {
+  let name = "Alice";
+
+  function innerFunction() {
+    console.log("Hello, " + name); // 👈 has access to `name` from outer scope
+  }
+
+  return innerFunction;
+}
+
+const greet = outerFunction(); // outerFunction runs and returns innerFunction
+greet(); // 👉 Output: Hello, Alice
+
+
 
 
 
