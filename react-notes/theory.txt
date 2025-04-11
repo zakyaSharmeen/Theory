@@ -1,0 +1,338 @@
+1. What are the features of React?
+JSX lets you write HTML in JavaScript for UI structure.
+
+Components, Virtual DOM, One-way binding, and High Performance make React modular, fast, and efficient.
+
+2. What is JSX?
+JSX is a syntax extension for writing HTML within JavaScript.
+
+It simplifies UI development by allowing HTML structure in JS files.
+
+3. Can web browsers read JSX directly?
+No, browsers only read regular JS, not JSX.
+
+JSX must be transpiled to JS using tools like Babel.
+
+4. What is the Virtual DOM?
+It's a lightweight copy of the real DOM used for efficient updates.
+
+React updates only changed elements, improving performance.
+
+5. Why use React instead of Angular?
+Simpler syntax and virtual DOM for faster performance.
+
+Reusable components and unidirectional data flow improve development speed and debugging.
+
+6. Difference between ES6 and ES5?
+ES6 uses import/export, arrow functions, and class syntax.
+
+ES5 uses require/module.exports and traditional function declarations.
+
+7. How to create a React app?
+Install Node.js and create-react-app via npm.
+
+Use a text editor like VS Code to write code.
+
+8. What is an event in React?
+It's a user or system-triggered action (e.g., click).
+
+Events use camelCase and pass functions as handlers in JSX.
+
+9. How do you create an event in React?
+Define a handler function and attach it via props (e.g., onClick).
+
+JSX handles events differently than HTML.
+
+10. What are synthetic events in React?
+A cross-browser wrapper around native events.
+
+Provides consistent behavior across browsers.
+
+11. How do lists work in React?
+Lists are created using JavaScript's map() method.
+
+They render repeated elements dynamically.
+
+12. Why use keys in lists?
+Keys help identify and track changes in list items.
+
+Improve performance by avoiding full re-renders.
+
+13. What are forms in React?
+Forms collect user input for tasks like login/search.
+
+Include elements like inputs, checkboxes, and buttons.
+
+14. How to create forms in React?
+Use JSX to define form elements.
+
+Handle form submissions using event handlers.
+
+15. How do you write comments in React?
+Use {/* comment */} for multi-line or inline comments.
+
+Cannot write comments outside JSX inside return blocks.
+
+16. What is an arrow function in React?
+A concise way to write functions using =>.
+
+Automatically binds this, avoiding common bugs in callbacks.
+
+17. Difference between React and React Native?
+React is for web apps; React Native is for mobile apps.
+
+React uses HTML/CSS; React Native uses native components.
+
+18. Difference between React and Angular?
+React uses virtual DOM and is view-only; Angular uses real DOM and full MVC.
+
+React supports unidirectional data flow; Angular uses two-way binding.
+
+19. What are React Hooks?
+Functions like useState and useEffect for managing state/lifecycle in functional components.
+
+Introduced in React 16.8 to simplify stateful logic.
+
+20. What is useState?
+A hook to create and manage state in functional components.
+
+Returns current state and a function to update it.
+
+21. What is useEffect?
+A hook for side effects (e.g., data fetching, subscriptions).
+
+Replaces lifecycle methods like componentDidMount.
+
+22. What is Memoization in React?
+Optimization technique to cache results and avoid re-renders.
+
+Use React.memo and useMemo for performance boost.
+
+23. What is Prop Drilling and how to avoid it?
+Prop drilling is passing props through many levels.
+
+Avoid it using Context API or state management tools.
+
+24. Explain React JS to someone with no programming background.
+React is a tool that helps developers build websites that look good and respond quickly. It's like digital Lego — you build websites using small pieces (called components) that can be reused. React is especially good for creating apps that load content smoothly without refreshing the whole page.
+
+25. What are the limitations of React?
+React is only a library, not a full framework, so it often needs extra tools.
+
+The code can get complex with many components.
+
+It has a learning curve, especially for beginners.
+
+26. What is Webpack used for?
+Webpack bundles all your project files (like JavaScript, CSS, and images) into one or more files to make your website faster and more organized. It helps manage dependencies and can optimize your files for production.
+
+27. Difference between controlled and uncontrolled components?
+Controlled Components: React manages the form data using state.
+
+Uncontrolled Components: The form data is handled by the DOM itself (like traditional HTML).
+Controlled ones allow more control and validation, while uncontrolled ones are simpler but less flexible.
+
+28. What are Custom Hooks?
+Custom Hooks are reusable functions in React that let you share logic between components. They start with the word use (like useFetch, useForm) and let you avoid repeating code.
+
+29. What is a Dispatcher?
+A dispatcher sends actions to the central data store in React (often in Redux). It's like a messenger that tells the store to update the data based on a specific instruction.
+
+30. Side effects in React components?
+With cleanup: Like setting a timer or subscribing to a service — needs cleanup to prevent issues.
+
+Without cleanup: Like fetching data — doesn't need extra cleanup.
+Use the useEffect() Hook for handling side effects.
+
+31. Lifecycle steps in React?
+Initialization – Setting up the component.
+
+Update – When props/state change.
+
+Destruction – When the component is removed from the page.
+
+32. What are Error Boundaries?
+Special components that catch errors in child components and show fallback UIs instead of crashing the whole app.
+
+33. Rules for using React Hooks?
+Always use Hooks at the top level of your function (not inside loops or conditions).
+
+Use Hooks only in React function components.
+
+34. What are Components in React?
+Components are the building blocks of a React app. They split the UI into reusable pieces.
+
+Functional Components (stateless): Simple functions.
+
+Class Components (stateful): Use classes and can have internal state.
+
+35. What does render() do in React?
+In class components, render() returns the UI (JSX) that should be shown on the screen.
+
+36. What is state in React?
+State is an object that holds data that can change over time in a component. When it changes, the UI updates automatically.
+
+37. How to use state in React?
+Use useState() in functional components or this.state in class components.
+
+38. How to update state?
+Use setState() in class components or the setX function from useState() in functional components.
+
+39. What are props in React?
+Props are inputs passed from one component to another. They’re read-only and help share data.
+
+40. How to pass props?
+Pass them like attributes:
+
+jsx
+Copy
+Edit
+<ChildComponent name="John" />
+Access with props.name inside ChildComponent.
+
+41. Differences between state and props?
+Feature	State	Props
+Mutability	Mutable	Immutable
+Usage	Internal data	External data
+Set by	Component itself	Parent component
+42. What is a Higher-Order Component (HOC)?
+A function that takes a component and returns a new component with added features (like adding login checks or data fetching).
+
+43. How to combine components in React?
+You can nest components inside others or pass them as props. It helps break down complex UIs.
+
+44. Class vs Functional Components?
+Class Components: Use ES6 classes, support lifecycle methods and state.
+
+Functional Components: Simpler, use Hooks like useState for state.
+
+45. Lifecycle Methods in Class Components:
+getInitialState()
+
+componentDidMount()
+
+shouldComponentUpdate()
+
+componentDidUpdate()
+
+componentWillUnmount()
+
+46. What is “Lifting State Up”?
+Moving shared state to a common parent component so multiple child components can use and sync it.
+
+47. How to avoid binding in React?
+Use arrow functions which don’t bind their own this:
+
+handleClick = () => { ... }
+48. What are React Fragments?
+Let you return multiple elements from a component without adding extra HTML tags:
+
+jsx
+Copy
+Edit
+<>
+  <h1>Hello</h1>
+  <p>World</p>
+</>
+49. When to use useMemo()?
+Use useMemo() to avoid recalculating expensive values unless necessary, and to keep object references stable across renders.
+
+50. Types of Hooks in React:
+Basic Hooks: useState, useEffect, useContext
+
+Additional Hooks: useRef, useMemo, useCallback
+
+Custom Hooks: Your own functions using other hooks.
+
+51. Updating Phase Lifecycle Methods:
+componentWillReceiveProps()
+
+shouldComponentUpdate()
+
+render()
+
+componentDidUpdate()
+
+componentWillUpdate() (deprecated)
+
+52. Functions of Higher-Order Components:
+Add new behavior
+
+Share logic
+
+Conditional rendering
+
+Manipulate props
+
+53. What do the three dots (...) mean in React?
+It’s the spread operator, used to expand objects or arrays. In JSX, it spreads props like:
+
+jsx
+Copy
+Edit
+<Image {...props} />
+54. What is Strict Mode in React?
+A tool to highlight potential issues in your code. It doesn’t affect the app visually but gives warnings in development mode.
+
+55. React Router components:
+Router: Wraps the app.
+
+Route: Defines a path and component.
+
+Switch: Renders only the first matching route.
+
+Link: Used to navigate without refreshing.
+
+56. What is Redux?
+Redux is a state management tool. It stores all app data in a central place so components can access and update it in a predictable way.
+
+57. Redux Components:
+Store: Holds state
+
+Actions: Describe what happened
+
+Reducers: Describe how state changes
+
+58. What is Flux?
+Flux is an architecture where data flows in a single direction:
+Action → Dispatcher → Store → View
+
+59. Redux vs Flux?
+Feature	Redux	Flux
+Stores	Single	Multiple
+Middleware	Yes	No
+Immutability	Enforced	Not required
+60. Context API vs Redux?
+Context API: Great for small apps, simpler setup.
+
+Redux: Better for large apps with complex state and logic.
+
+61. What is React Router?
+A library for handling navigation in React apps — lets you change the URL without reloading the page.
+
+62. Why use React Router?
+To create a smooth single-page experience where views change without refreshing the whole website.
+
+63. React Routing vs Traditional Routing:
+Traditional: Full page reload
+
+React Router: Just swaps the component, no reload
+
+64. How to implement routing in React?
+Install react-router-dom
+
+Use <BrowserRouter>, <Route>, <Link> in your app.
+
+65. How to style React components?
+CSS files
+
+Inline styles
+
+CSS-in-JS (e.g., styled-components)
+
+Frameworks like Bootstrap or Material UI
+
+66. What are CSS Modules?
+CSS Modules scope your styles to the component to avoid naming conflicts. You import them like JavaScript objects.
+import styles from './Button.module.css';
+<button className={styles.primary}>Click</button>
