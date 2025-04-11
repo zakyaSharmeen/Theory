@@ -166,8 +166,24 @@ bind()	Does NOT Execute Immediately	Passed One by One
 
 
 16-What is currying in JavaScript?
-Currying transforms a function with multiple arguments into a sequence of functions, each taking a single argument.
-It allows partial application of arguments for reusability.
+Currying is the process of transforming a function with multiple arguments into a sequence of functions, each taking one argument at a time.
+
+normal function ex---   
+function add(a, b) {
+  return a + b;
+}
+
+add(2, 3); // 5
+
+ \\\\\\\\    curried function
+function add(a) {
+  return function (b) {
+    return a + b;
+  };
+}
+
+add(2)(3); // 5
+
 
 17-What are some advantages of using External JavaScript?
 it improves code reusability and 
@@ -178,8 +194,6 @@ It  reduces loading time.
 Scope determines the visibility of variables and functions in a program.
 The scope chain is the hierarchy of scopes used to resolve variable access.
 
-19-Explain Closures in JavaScript.
-its the avilability of a function to remember the variable and function which are declared in its outer scope.
 
 
 20-Mention some advantages of JavaScript.
@@ -258,10 +272,7 @@ Classes are syntactic sugar over prototypes, providing a cleaner way to define o
 They include methods like constructor() and support inheritance through extends.
 
 
-What are generator functions?
 
-Generator functions are special functions that can pause and resume their execution using the yield keyword.
-They return an iterator object on execution.
 Explain WeakSet in JavaScript.
 
 WeakSet is a collection of objects where the references are weak, meaning the objects can be garbage-collected if there are no other references to them.
