@@ -1,3 +1,13 @@
+js?
+JavaScript is a programming language used to create interactive and dynamic content on websites.
+🧠 In simple terms:
+HTML = structure
+
+CSS = styling
+
+JavaScript = behavior / interactivity
+
+
 1-What are the different data types present in JavaScript?
 
 Primitive types: String, Number, BigInt, Boolean, Symbol, Undefined, and Null.
