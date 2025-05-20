@@ -176,7 +176,7 @@ bind()	Does NOT Execute Immediately	Passed One by One
 
 
 16-What is currying in JavaScript?
-Currying is the process of transforming a function with multiple arguments into a sequence of functions, each taking one argument at a time.
+currying is a technique where a function doesn't take all arguments at once, but one at a time, returning a new function each time.
 
 normal function ex---   
 function add(a, b) {
