@@ -1,0 +1,165 @@
+🖨️  - Basics: Print Function
+Intro: The print() function outputs text or variables to the console.
+Example:
+print("Welcome to Python!")
+
+
+🔤- Variables: Usage & Naming
+Intro: Variables store data. Use meaningful names and follow lowercase_with_underscores.
+Example:
+
+user_name = "Alice"
+age = 25
+
+
+🔢  - Data Types: Intro to Numbers, Booleans, Strings
+Intro: Python supports various types like integers, floats, booleans, and strings.
+Example:
+
+x = 10        # int
+y = 3.14      # float
+is_happy = True  # boolean
+name = "Bob"  # string
+
+
+🧱  - Data Types: Complex Types
+Intro: Includes lists, tuples, dictionaries, and sets.
+Example:
+
+fruits = ["apple", "banana"]        # list
+coordinates = (10.0, 20.0)          # tuple
+user = {"name": "Eve", "age": 22}   # dictionary
+unique_numbers = {1, 2, 3}          # set
+
+
+🔄- Data Types: Casting & Conversion
+Intro: Convert between data types using functions like int(), str(), etc.
+Example:
+
+num_str = "123"
+num = int(num_str)  # 123 as int
+
+✅ - Booleans: Deep Dive
+Intro: Booleans are True or False, used in conditions and logic.
+Example:
+
+is_valid = 10 > 5  # True
+🧮 49:33 - Functions: Input & Print
+Intro: Use input() to get user data and print() to show output.
+Example:
+
+name = input("Enter your name: ")
+print("Hello,", name)
+
+🧵- Strings: Escape Sequences & Raw Strings
+Intro: Escape characters like \n for newline. Raw strings ignore them.
+Example:
+
+print("Line1\nLine2")  # With newline
+print(r"C:\Users\Name")  # Raw string
+
+
+➕ - Operators: Arithmetic
+Intro: Arithmetic operators include +, -, *, /.
+Example:
+
+a = 5 + 3  # 8
+b = 10 / 2 # 5.0
+
+
+🔋 - Operators: Power & Mod
+Intro: ** is for power; % gives the remainder.
+Example:
+
+print(2 ** 3)  # 8
+print(10 % 3)  # 1
+
+🔍- Logic: Comparison Operators
+Intro: Used to compare values (==, !=, <, >, etc.)
+Example:
+
+print(5 == 5)  # True
+print(3 != 2)  # True
+
+🔗 - Logic: AND Operator
+Intro: Combines conditions; both must be true.
+Example:
+
+age = 20
+is_student = True
+print(age > 18 and is_student)  # True
+
+
+🧭 - Control Flow: Intro
+Intro: Decide what code runs using if, else, etc.
+Example:
+
+if True:
+    print("It runs!")
+
+
+🔄 - Control Flow: If, If-Else, Elif
+Intro: Different paths based on conditions.
+Example:
+
+score = 85
+if score >= 90:
+    print("A")
+elif score >= 80:
+    print("B")
+else:
+    print("C")
+
+🧩 - Control Flow: Nested Conditions
+Intro: Conditions inside other conditions.
+Example:
+
+age = 20
+if age > 18:
+    if age < 25:
+        print("Young adult")
+
+
+🔁 - Loops: For & While, Conditions
+Intro: Repeat code using loops.
+Example:
+
+for i in range(5):
+    print(i)
+
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+
+
+📏 - Loops: Understanding Range
+Intro: range(start, stop, step) creates sequences.
+Example:
+
+for i in range(1, 10, 2):
+    print(i)  # 1, 3, 5, 7, 9
+
+
+🧮 - Loops: Range & Printing Tables
+Intro: Use loops to print tables.
+Example:
+
+num = 5
+for i in range(1, 11):
+    print(f"{num} x {i} = {num * i}")
+
+
+⛔ - Loops: Break & Continue
+Intro: break exits loop early; continue skips to next.
+Example:
+
+for i in range(5):
+    if i == 3:
+        break
+    print(i)
+
+for i in range(5):
+    if i == 3:
+        continue
+    print(i)
